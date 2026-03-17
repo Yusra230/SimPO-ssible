@@ -94,11 +94,16 @@ numpy==1.26.4
 ### Training Results
 | Metric | Our Result (GPT-2) | Paper Result (Llama-3-8B) |
 |--------|-------------------|--------------------------|
-| Starting loss | ~1.10 | ~1.20 |
+| Starting loss | 0.9853 | ~1.20 |
 | Final loss | ~0.40 | ~0.32 |
-| Loss reduction | 64% | ~73% |
+| Loss reduction | 59% | ~73% |
 | AlpacaEval 2 | N/A | 64.8 (+6.4 vs DPO) |
 | Arena-Hard | N/A | 41.3 (+7.5 vs DPO) |
+
+| Experiment | Start Loss | Final Loss | Reduction |
+|------------|-----------|------------|-----------|
+| SimPO γ=0.5 (ours) | 0.9853 | 0.4049 | 59% |
+| SimPO γ=0.0 (ablation) | ~0.70 | 0.5365 | 23% |
 
 ### Training Curve
 ![Training Curve](results/training_curve.png)
