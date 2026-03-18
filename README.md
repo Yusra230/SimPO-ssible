@@ -112,7 +112,7 @@ numpy==1.26.4
 ### Training Curve
 ![Training Curve](results/training_curve.png)
 
-The curve shows loss decreasing from ~1.1 to ~0.4 over 75 steps,
+The curve shows loss decreasing from 0.9853 to ~0.4 over 75 steps,
 confirming SimPO successfully learns to prefer chosen over 
 rejected responses.
 
