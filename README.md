@@ -100,10 +100,14 @@ numpy==1.26.4
 | AlpacaEval 2 | N/A | 64.8 (+6.4 vs DPO) |
 | Arena-Hard | N/A | 41.3 (+7.5 vs DPO) |
 
+### Experiment
 | Experiment | Start Loss | Final Loss | Reduction |
 |------------|-----------|------------|-----------|
-| SimPO γ=0.5 (ours) | 0.9853 | 0.4049 | 59% |
-| SimPO γ=0.0 (ablation) | ~0.70 | 0.5365 | 23% |
+| SimPO γ=0.5 Run 1 | 0.9853 | 0.4049 | 59% |
+| SimPO γ=0.5 Run 2 | 0.9853 | 0.4669 | 53% |
+| SimPO γ=0.0 ablation Run 1 | ~0.70 | 0.5365 | 23% |
+| SimPO γ=0.0 ablation Run 2 | ~0.70 | 0.3188 | 54% |
+| Paper (Llama-3-8B) | ~1.20 | ~0.32 | ~73% |
 
 ### Training Curve
 ![Training Curve](results/training_curve.png)
